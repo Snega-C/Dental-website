@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the dental services offered at Sterling Dental: from teeth cleaning and root canals to orthodontic alignment, teeth whitening, and pediatric dentistry.">
+    <title>Our Services | Sterling Dental Clinic</title>
+    
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- STICKY HEADER -->
+    <header class="header-wrapper" role="banner">
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="Main Navigation">
+                <a href="index.html" class="logo" id="logoLink">
+                    <div class="logo-icon">S</div>
+                    <span class="logo-text">Sterling<span>Dental</span></span>
+                </a>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <a href="contact.html" class="btn btn-primary btn-header" id="headerCta">Book Appointment</a>
+                
+                <button class="hamburger" id="menuToggle" aria-label="Toggle Menu" aria-expanded="false" aria-controls="navLinks">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header" aria-label="Breadcrumb Header">
+        <div class="container">
+            <span class="section-subtitle">Our Offerings</span>
+            <h1>Specialized Dental Treatments</h1>
+            <nav class="breadcrumbs" aria-label="Breadcrumbs">
+                <a href="index.html">Home</a> &gt; <span>Services</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- SERVICES SHOWCASE -->
+    <section class="section-padding" aria-label="Services List">
+        <div class="container">
+            <div class="section-title-wrap text-center reveal-on-scroll">
+                <span class="section-subtitle">Clinical Specialties</span>
+                <h2 class="heading-lg">Painless, Aesthetic, and Bio-Safe Solutions</h2>
+                <p>We provide full-spectrum oral care under one roof. Our modern operatories are engineered for stress-free dentistry, utilising high-definition cameras and soft-tissue lasers.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1: General Dentistry -->
+                <div class="service-card reveal-on-scroll reveal-delay-1" id="srvGeneral">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                    </div>
+                    <h3>General Dentistry</h3>
+                    <p>Keep your teeth and gums healthy with routine checkups, comprehensive diagnostics, and personalized oral health guidance.</p>
+                    <div class="service-drawer" id="drawGeneral">
+                        General dentistry services include digital diagnostics, dental plaque scaling, fluoride applications, fillings, and early-stage gum treatment options.
+                    </div>
+                    <button class="btn-text" aria-controls="drawGeneral">Learn More</button>
+                </div>
+
+                <!-- Service 2: Teeth Cleaning -->
+                <div class="service-card reveal-on-scroll reveal-delay-2" id="srvCleaning">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM4 9h16v3H4V9zm16 10H4v-5h16v5z"/></svg>
+                    </div>
+                    <h3>Teeth Cleaning</h3>
+                    <p>Deep-cleaning scaling and polishing procedures using ultrasonic scalers to remove stains, plaque, and stubborn tartar buildup.</p>
+                    <div class="service-drawer" id="drawCleaning">
+                        Our advanced ultrasonic cleaning removes sub-gingival calculus smoothly, followed by fine air-polishing to remove coffee and tea staining.
+                    </div>
+                    <button class="btn-text" aria-controls="drawCleaning">Learn More</button>
+                </div>
+
+                <!-- Service 3: Root Canal Treatment -->
+                <div class="service-card reveal-on-scroll reveal-delay-3" id="srvRootCanal">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                    </div>
+                    <h3>Root Canal Treatment</h3>
+                    <p>Painless micro-endodontic therapy to save severely damaged or infected teeth, eliminating pain and restoring chew strength.</p>
+                    <div class="service-drawer" id="drawRootCanal">
+                        We perform root canal therapy using electronic apex locators and digital rotary files, ensuring high precision, speed, and safety.
+                    </div>
+                    <button class="btn-text" aria-controls="drawRootCanal">Learn More</button>
+                </div>
+
+                <!-- Service 4: Dental Implants -->
+                <div class="service-card reveal-on-scroll reveal-delay-4" id="srvImplants">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c-.6 0-1 .4-1 1v4H8c-.6 0-1 .4-1 1v2c0 2.8 2.2 5 5 5s5-2.2 5-5V9c0-.6-.4-1-1-1h-3V3c0-.6-.4-1-1-1zm3 8v1c0 1.7-1.3 3-3 3s-3-1.3-3-3v-1h6zM9 16c-2.8 0-5 2.2-5 5 0 .6.4 1 1 1h14c.6 0 1-.4 1-1 0-2.8-2.2-5-5-5H9z"/></svg>
+                    </div>
+                    <h3>Dental Implants</h3>
+                    <p>Permanently replace single or multiple missing teeth with bio-compatible implants topped with custom porcelain crowns.</p>
+                    <div class="service-drawer" id="drawImplants">
+                        Implants provide a permanent anchor. We use advanced computer-guided surgery templates for absolute structural alignment and minimal healing.
+                    </div>
+                    <button class="btn-text" aria-controls="drawImplants">Learn More</button>
+                </div>
+
+                <!-- Service 5: Orthodontics -->
+                <div class="service-card reveal-on-scroll reveal-delay-1" id="srvOrthodontics">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg>
+                    </div>
+                    <h3>Orthodontics</h3>
+                    <p>Realign misaligned teeth and incorrect bites using standard low-profile braces or customized, removable clear aligners.</p>
+                    <div class="service-drawer" id="drawOrthodontics">
+                        We offer Invisalign clear alignment templates and ceramic braces. Our orthodontic team maps out digital movements for faster, predictable results.
+                    </div>
+                    <button class="btn-text" aria-controls="drawOrthodontics">Learn More</button>
+                </div>
+
+                <!-- Service 6: Cosmetic Dentistry -->
+                <div class="service-card reveal-on-scroll reveal-delay-2" id="srvCosmetic">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM12 6a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm-4 9c0-1.8 1.8-3 4-3s4 1.2 4 3H8z"/></svg>
+                    </div>
+                    <h3>Cosmetic Dentistry</h3>
+                    <p>Transform your visual appearance. Perfect chip cracks, gaps, shapes, and contours using premium veneers and dental bonding.</p>
+                    <div class="service-drawer" id="drawCosmetic">
+                        Veneers are ultra-thin shells of porcelain bonded to the front teeth to create beautiful, symmetrical smiles.
+                    </div>
+                    <button class="btn-text" aria-controls="drawCosmetic">Learn More</button>
+                </div>
+
+                <!-- Service 7: Teeth Whitening -->
+                <div class="service-card reveal-on-scroll reveal-delay-3" id="srvWhitening">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+                    </div>
+                    <h3>Teeth Whitening</h3>
+                    <p>Brighten your teeth up to 8 shades in a single appointment using advanced medical whitening lasers with zero enamel damage.</p>
+                    <div class="service-drawer" id="drawWhitening">
+                        We apply a protective barrier to your gums, coat teeth in hydrogen peroxide gel, and activate it with a specialized Zoom laser.
+                    </div>
+                    <button class="btn-text" aria-controls="drawWhitening">Learn More</button>
+                </div>
+
+                <!-- Service 8: Pediatric Dentistry -->
+                <div class="service-card reveal-on-scroll reveal-delay-4" id="srvPediatric">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 0 0-9 9c0 1.25.26 2.45.75 3.53C5.1 14.86 6.9 14 9 14h6c2.1 0 3.9.86 5.25 1.53.49-1.08.75-2.28.75-3.53a9 9 0 0 0-9-9zm-3 8a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm6 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
+                    </div>
+                    <h3>Pediatric Dentistry</h3>
+                    <p>Gentle, patient-focused dental care tailored for children, creating positive clinic experiences from a young age.</p>
+                    <div class="service-drawer" id="drawPediatric">
+                        We offer dental sealants, decay prevention, and gentle pediatric procedures in our friendly, custom-decorated rooms.
+                    </div>
+                    <button class="btn-text" aria-controls="drawPediatric">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SAFETY & STANDARDS -->
+    <section class="section-padding" aria-label="Safety Standards" style="background-color: var(--bg-card); border-top: 1px solid rgba(11, 79, 108, 0.05);">
+        <div class="container">
+            <div class="why-grid">
+                <div class="why-content">
+                    <span class="section-subtitle">Clinical Quality</span>
+                    <h2 class="heading-lg">Exceeding Sterilization & Hygiene Protocols</h2>
+                    <p>Your safety is our priority. We employ rigorous clinical sterilization workflows, using hospital-grade steam autoclaves and chemical integration indicators for 100% sterile instruments.</p>
+                    <ul style="list-style: none; margin-top: 1.5rem;">
+                        <li style="margin-bottom: 0.75rem; display: flex; gap: 0.75rem;">
+                            <span style="color: var(--success); font-weight: bold;">✓</span>
+                            <span>Hospital-grade class-B autoclaves for zero cross-contamination.</span>
+                        </li>
+                        <li style="margin-bottom: 0.75rem; display: flex; gap: 0.75rem;">
+                            <span style="color: var(--success); font-weight: bold;">✓</span>
+                            <span>Air purifying HEPA filtration systems in every single suite.</span>
+                        </li>
+                        <li style="margin-bottom: 0.75rem; display: flex; gap: 0.75rem;">
+                            <span style="color: var(--success); font-weight: bold;">✓</span>
+                            <span>100% bio-compatible materials and mercury-free composite restorations.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="why-image-wrapper">
+                    <img src="assets/images/clinic-facilities.png" alt="Surgical prep suite highlighting high hygiene standards at Sterling Dental Clinic" width="570" height="420">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ ACCORDION -->
+    <section class="section-padding" aria-label="Frequently Asked Questions">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <span class="section-subtitle">FAQ</span>
+                <h2 class="heading-lg">Common Dental Questions</h2>
+                <p>Learn more about payments, insurance policies, and general expectations before scheduling.</p>
+            </div>
+            
+            <div class="faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item" id="faq1">
+                    <button class="faq-question" aria-expanded="false" aria-controls="ans1">
+                        What insurance providers do you accept?
+                        <span class="faq-icon" aria-hidden="true">▾</span>
+                    </button>
+                    <div class="faq-answer" id="ans1">
+                        <div class="faq-answer-inner">
+                            We accept all major PPO insurance plans (Delta Dental, Aetna, Cigna, MetLife, Guardian, etc.). Our front desk team handles all paperwork processing and billing directly on your behalf to minimize stress.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item" id="faq2">
+                    <button class="faq-question" aria-expanded="false" aria-controls="ans2">
+                        How long does a typical teeth whitening procedure take?
+                        <span class="faq-icon" aria-hidden="true">▾</span>
+                    </button>
+                    <div class="faq-answer" id="ans2">
+                        <div class="faq-answer-inner">
+                            Our clinic-grade laser whitening takes approximately 45 to 60 minutes. We apply protective gels, perform three 15-minute exposure cycles, and conclude with a desensitizing finish, leaving you with instant results.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item" id="faq3">
+                    <button class="faq-question" aria-expanded="false" aria-controls="ans3">
+                        Are dental implant surgeries painful?
+                        <span class="faq-icon" aria-hidden="true">▾</span>
+                    </button>
+                    <div class="faq-answer" id="ans3">
+                        <div class="faq-answer-inner">
+                            No. The actual surgery is conducted under local anesthesia, meaning you won't feel pain. Post-procedure discomfort is minimal and easily managed with over-the-counter pain relievers for 2-3 days.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item" id="faq4">
+                    <button class="faq-question" aria-expanded="false" aria-controls="ans4">
+                        How often should I visit the dentist for cleanings?
+                        <span class="faq-icon" aria-hidden="true">▾</span>
+                    </button>
+                    <div class="faq-answer" id="ans4">
+                        <div class="faq-answer-inner">
+                            For optimal oral hygiene, we recommend professional scaling and assessment every six months. Patients with history of gum issues or fast plaque accumulation may benefit from visits every three to four months.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1 -->
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                        <div class="logo-icon">S</div>
+                        <span class="logo-text" style="color: white;">Sterling<span>Dental</span></span>
+                    </a>
+                    <p>A luxury approach to health. Building long-term patient relationships through medical excellence, elite craftsmanship, and supreme patient comfort.</p>
+                    <div class="footer-socials">
+                        <a href="https://linkedin.com" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn profile">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://facebook.com" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Facebook page">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://instagram.com" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Instagram feed">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                        </a>
+                        <a href="https://wa.me/18005553275?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20booking%20a%20dental%20appointment." class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.019-5.117-2.875-6.974-1.858-1.857-4.34-2.879-6.979-2.88-5.439 0-9.865 4.42-9.869 9.865-.001 1.71.461 3.382 1.337 4.9l-.999 3.648 3.738-.981zm11.387-5.464c-.301-.15-1.78-.879-2.056-.979-.275-.1-.475-.15-.675.15-.199.3-.775.979-.95 1.178-.175.2-.35.225-.65.075-3.56-1.78-4.739-4.74-5.075-5.32-.336-.58-.035-.895.265-1.194.27-.27.6-.7.9-1.05.075-.088.138-.175.188-.263.15-.25.075-.475-.038-.7-.113-.225-.945-2.279-1.295-3.125-.34-.818-.685-.71-.945-.723-.244-.012-.523-.015-.802-.015-.279 0-.733.105-1.118.525-.385.42-1.472 1.44-1.472 3.51 0 2.07 1.506 4.08 1.715 4.38.21.3 2.964 4.525 7.18 6.345 3.52 1.52 4.237 1.22 5.006 1.15.769-.07 1.78-.727 2.03-1.427.25-.7.25-1.3.175-1.425-.075-.125-.275-.2-.575-.35z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Col 2 -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Dental Services</a></li>
+                        <li><a href="doctors.html">Meet the Team</a></li>
+                        <li><a href="contact.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 3 -->
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">📍</span>
+                        <span>742 Sterling Plaza, Suite 100, Beverly Hills, CA 90210</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">📞</span>
+                        <span>+1 (800) 555-3275</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">✉️</span>
+                        <span>concierge@sterlingdental.com</span>
+                    </div>
+                </div>
+                
+                <!-- Col 4 -->
+                <div class="footer-col">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for oral health insights and cosmetic wellness news.</p>
+                    <form class="newsletter-form" id="footerNewsletter" action="#" method="POST" aria-label="Newsletter Subscription Form">
+                        <input type="email" placeholder="Your Email Address" required aria-label="Email for newsletter subscription">
+                        <button type="submit" class="btn btn-primary" style="background-color: var(--accent); color: var(--bg-dark); border:none;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sterling Dental Clinic. All rights reserved.</p>
+                <p>Designed for Ultimate Patient Care | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING ACTIONS -->
+    <div class="floating-actions">
+        <!-- WhatsApp Chat -->
+        <a href="https://wa.me/18005553275?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20booking%20a%20dental%20appointment." class="floating-btn whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.333 4.993L2 22l5.233-1.371a9.945 9.945 0 0 0 4.775 1.216h.004c5.506 0 9.989-4.478 9.99-9.984A9.998 9.998 0 0 0 12.012 2zm5.748 14.156c-.244.688-1.42 1.254-1.954 1.338-.49.076-1.127.137-3.266-.749-2.735-1.134-4.5-3.918-4.636-4.1a5.4 5.4 0 0 1-1.122-2.906c0-1.506.786-2.247 1.069-2.553.282-.305.626-.381.838-.381.213 0 .426.002.612.01.196.009.46-.073.719.553.267.646.914 2.228.992 2.388.079.16.131.346.026.558-.106.213-.16.346-.319.531-.16.187-.336.417-.48.56-.16.16-.328.334-.143.654.186.32 1.282 2.107 2.748 3.41 1.889 1.68 3.486 2.202 3.98 2.404.494.202.779.172.97-.05.19-.22.823-.96.1044-1.285.221-.325 1.22-.533 1.372-.426.153.107.97.458 1.886.915.915.457 1.066.671 1.127.778.061.107.061.62-.183 1.308z"/></svg>
+        </a>
+        
+        <!-- Instagram Feed -->
+        <a href="https://instagram.com" class="floating-btn instagram-btn" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        </a>
+        
+        <!-- Scroll To Top -->
+        <button class="floating-btn scroll-top-btn" aria-label="Scroll to top">↑</button>
+    </div>
+
+    <!-- JS Bundle -->
+    <script src="js/main.js"></script>
+</body>
+</html>
